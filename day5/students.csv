@@ -1,0 +1,8 @@
+student, 0, quan lee, quan@email.com
+course, 0, 0, science, A
+course, 0, 1, math, B
+course, 0, 2, physics, C
+student, 1, jack jones, Jack@email.com
+course, 1, 0, science, B
+course, 1, 1, math, B
+course, 1, 2, physics, B

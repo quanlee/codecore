@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="normalize.css" />
+    <style>
+      ul.nav{
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+
+      }
+
+      li.nav-item{
+        display:inline;
+        float: left;
+        padding-bottom: 5px;
+        padding-left: 8px;
+        padding-right: 8px;
+        height: 5px;
+        font-weight: bold;
+      }
+
+      a.nav-link{
+        display:block;
+      }
+
+      .header{
+        float: right;
+      }
+
+      .main{
+        width:75%;
+        margin:0 auto;
+        padding-top: 20px;
+      }
+
+      li~li.nav-item{ border-left: 1px solid #000000 }
+
+      span.title{
+        font-size: 20pt;
+      }
+      div.table{
+        width:100%;
+        height:100%;
+        margin:0;
+        padding:0;
+        border: solid black 1pt;
+      }
+      div.tableheader{
+        width:100%;
+        height:20px;
+        background-color: darkgrey;
+      }
+      div.row{
+        width:100%;
+        height:30px;
+        padding-top: 10px;
+      }
+      div.col1{
+        width:30%;
+      }
+      div.col2{
+        width:40%;
+      }
+      div.col3{
+        width:30%;
+      }
+      div.grey{
+        background-color: lightgrey;
+      }
+      div.cell{
+        float:left;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div style="height:150px">
+        <img src="img/mapleleaf.png" style="float:left; height:120px; width:120px" />
+        <div class="header">
+
+          <ul class="nav">
+            <li class="nav-item"><a class="nav-link" href="www.canada.com">Government Website</a></li>
+            <li class="nav-item"><a class="nav-link" href="en.wikipedia.org">Wikipedia</a></li>
+            <li class="nav-item"><a class="nav-link" href="www.codecore.ca">contact us</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr size="5"/>
+      <div>
+        <h1>Welcome to Canada</h1>
+        <span>Canada is an awesome country!</span>
+        <h2>Favorite Sports</h2>
+        <span>The favorite sports in Canada are</span>
+        <ul>
+          <li>Hockey</li>
+          <li>Hockey</li>
+          <li>And more Hockey..</li>
+        </ul>
+      </div>
+      <div>
+        <span class="title">Largest Metropolitan Areas</span>
+        <div class="table">
+          <div class="tableheader">
+            <div class="cell col1"><span>City</span></div>
+            <div class="cell col2"><span>Province</span></div>
+            <div class="cell col3"><span>Population</span></div>
+          </div>
+          <div class="row grey">
+            <div class="cell col1"><span>Toronto</span></div>
+            <div class="cell col2"><span>Ontario</span></div>
+            <div class="cell col3"><span>5583064</span></div>
+          </div>
+          <div class="row">
+            <div class="cell col1"><span>Montreal</span></div>
+            <div class="cell col2"><span>Quebec</span></div>
+            <div class="cell col3"><span>3824221</span></div>
+          </div>
+          <div class="row grey">
+            <div class="cell col1"><span>Vancouver</span></div>
+            <div class="cell col2"><span>British Columbia</span></div>
+            <div class="cell col3"><span>2313328</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </body>
+</html>
