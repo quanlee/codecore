@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+    html{
+      background-color: white;
+    }
+    body{
+      margin: 100px 100px 100px 100px;
+      background-color: grey;
+    }
+    div{
+      margin: 50px 50px 50px 50px;
+      padding:20px 20px 20px 20px;
+      background-color: yellow;
+      border: solid 5px black;
+    }
+    .relative-position{
+      position: relative;
+      top: 20px;
+      left: 50px;
+      background-color: blue
+    }
+    .absolute-position{
+      position: absolute;
+      top: 20px;
+      left: 50px;
+    }
+    .fixed-position{
+      position: fixed;
+      top: 20px;
+      left: 300px;
+    }
+    span{
+      border: single 1px black
+    }
+    </style>
+  </head>
+  <body>
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
+    <div>
+      Default position is <strong>static</strong> <br />
+
+      <strong>relative position</strong> - lays out all elements as though the element were not positioned, and then adjust the element's position, without changing layout (and thus leaving a gap for the element where it would have been had it not been positioned). <br />
+      Example in blue, the gap where the span was is present and the span is relocated relative to the gap<br />
+      <br />
+
+      <strong>absolute position</strong> - Do not leave space for the element. Instead, position it at a specified position relative to its closest positioned ancestor or to the containing block. Absolutely positioned boxes can have margins, they do not collapse with any other margins. <br />
+      Example in red where div3 position is default static so the position is relative to the main body<br />
+      Example in green where div4 position is relative without change in top or left, so the span is absolute relative to the div instead of the body<br />
+      <br />
+      <strong>fixed postion</strong> - Do not leave space for the element. Instead, position it at a specified position relative to the screen's viewport and don't move it when scrolled. When printing, position it at that fixed position on every page. This value always create a new stacking context.<br />
+      Example in pink is always at the top of the screen, no matter the scrolling
+    </div>
+    <div>
+      <h3>Div3</h3>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <span class="relative-position">Relative example top is 20, left is 50</span> <span style="background-color:red" class="absolute-position">Absolute example, top is 20, left is 50</span>ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+    </div>
+    <div style="position:relative">
+      <h3>Div4 position is relative but no change in top or left</h3>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <span style="background-color:green" class="absolute-position">Absolute example, top is 20, left is 50</span>ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<span style="background-color:pink" class="fixed-position">Fixed positioning,top is 20, left is 300 </span>
+
+    </div>
+
+  </body>
+</html>

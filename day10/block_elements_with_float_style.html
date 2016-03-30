@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Float style with block elements such as divs</title>
+    <style>
+    .box {
+      width:200px;
+      height:200px;
+      border:solid 5px black
+    }
+    .red{
+      background-color: red
+    }
+    .green{
+      background-color: green
+    }
+    .blue{
+      background-color: blue
+    }
+    .yellow{
+      background-color: yellow
+    }
+    .float-left{
+      float:left;
+    }
+    .float-right{
+      float:right;
+    }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>No float with divs</h1>
+      <div class="red box">
+        no float
+      </div>
+      <div class="green box">
+        no float
+      </div>
+      <div class="blue box">
+        no float
+      </div>
+      <div class="yellow box">
+        no float
+      </div>
+    </div>
+    <hr />
+    <div>
+      <h1>2 left floats after 2 no floats</h1>
+      <div class="red box">
+        no float
+      </div>
+      <div class="green box">
+        no float
+      </div>
+      <div class="blue box float-left">
+        float-left
+      </div>
+      <div class="yellow box float-left">
+        float-left
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <hr />
+    <div>
+      <h1>2 right floats AFTER 2 no floats</h1>
+      <div class="red box">
+        no float
+      </div>
+      <div class="green box">
+        no float
+      </div>
+      <div class="blue box float-right">
+        float-right
+      </div>
+      <div class="yellow box float-right">
+        float-right
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+    <hr />
+    <div>
+      <h1>2 right floats THEN 2 no floats</h1>
+      <div class="red box float-right">
+        float-right
+      </div>
+      <div class="green box float-right">
+        float-right
+      </div>
+      <div class="blue box">
+        no float
+      </div>
+      <div class="yellow box">
+        no float
+      </div>
+    </div>
+
+    <hr />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <div>
+      <h1>2 left floats THEN 2 no floats</h1>
+      <div class="red box float-left">
+        float-left
+      </div>
+      <div class="green box float-left">
+        float-left
+      </div>
+      <div class="blue box">
+        no float
+      </div>
+      <div class="yellow box">
+        no float
+      </div>
+    </div>
+    <hr />
+    <div>
+      <h1>2 left floats then 2 right floats</h1>
+      <div class="red box float-left">
+        float-left
+      </div>
+      <div class="green box float-left">
+        float-left
+      </div>
+      <div class="blue box float-right">
+        float-right
+      </div>
+      <div class="yellow box float-right">
+        float-right
+      </div>
+    </div>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<hr />
+<div>
+  <h1>2 right floats then 2 left floats</h1>
+  <div class="red box float-right">
+    float-right
+  </div>
+  <div class="green box float-right">
+    float-right
+  </div>
+  <div class="blue box float-left">
+    float-left
+  </div>
+  <div class="yellow box float-left">
+    float-left
+  </div>
+</div>
+  </body>
+</html>
